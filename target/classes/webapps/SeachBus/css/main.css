@@ -1,0 +1,143 @@
+/* 格式化样式 */
+html,body{
+    padding: 0;
+    margin: 0;
+}
+/*for grs*/
+.loginGRS-banner {
+    position: relative;
+    background-color:#fff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-width: 1280px;
+}
+
+.loginGRS-banner .loginGRS-top {
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #4182f1;
+}
+
+.loginGRS-banner .loginGRS-top img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+.loginGRS-banner .all-center {
+    width: 800px;
+    min-width: 800px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginGRS-banner .loginGRS-shield {
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    vertical-align: baseline;
+}
+
+.loginGRS-banner .loginGRS-login {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.loginGRS-banner .login-left {
+    float: left;
+    background-image: url(../../common/img/login-left.png);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 31%;
+    text-align: center;
+    background: #0570e9;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+    margin-left: 0;
+    box-shadow: 1px 1px 3px #777;
+}
+
+.loginGRS-banner .login-left p {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.loginGRS-banner .login-left a {
+    text-decoration: underline;
+}
+
+.loginGRS-banner .login-right {
+    float: left;
+    height: 100%;
+    width: 61%;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 1px 1px 3px #777;
+}
+
+.loginGRS-banner .qr-code {
+    width: 120px;
+    height: 120px;
+    margin-top: 55px;
+}
+
+.loginGRS-banner .form-group {
+    min-height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.loginGRS-banner .form-group label {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
+    color: #0570e9;
+    float: left;
+}
+
+.loginGRS-banner .form-group .form-div {
+    width: 300px;
+    float: left;
+    min-height: 33px;
+}
+
+.loginGRS-banner .form-group div input {
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+}
+
+.loginGRS-banner .form-group button {
+    width: 330px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #0570e9;
+    border-radius: 4px;
+    font-size: 16px;
+    background: #0570e9;
+    color: #fff;
+    margin-left: 60px;
+}
+
+.loginGRS-banner .forgetPassword {
+    float: right;
+    color: #999999;
+    font-size: 12px;
+}
+
+.loginGRS-banner .form-group .checkdiv {
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+}
