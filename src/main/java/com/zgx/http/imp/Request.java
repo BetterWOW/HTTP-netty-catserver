@@ -74,7 +74,7 @@ public class Request implements HttpServletRequest {
 
 		this.port = Integer.parseInt(httpRequestData.getRequestHead("Host").split(":")[1]);
 		this.servletContext = ServletContextManager
-				.getContext("/" + this.httpRequestData.getRequestLine().getURL().split("/")[1]);
+				.getContext("/" + this.httpRequestData.getRequestLine().getURL().split("/",-1)[1]);
 		// 将数据放入parameter
 		// get请求方式
 		if (this.httpRequestData.getRequestLine().getMethod().equals("GET")) {
@@ -155,7 +155,7 @@ public class Request implements HttpServletRequest {
 			String[] cookiesStrs = cookiesStr.split(";");
 			this.cookies = new Cookie[cookiesStrs.length];
 			for (int i = 0; i < cookiesStrs.length; i++) {
-				String[] cookieStr = cookiesStrs[i].split("=");
+				String[] cookieStr = cookiesStrs[i].split("=",-1);
 				this.cookies[i] = new Cookie(cookieStr[0].trim(), cookieStr[1]);
 			}
 
